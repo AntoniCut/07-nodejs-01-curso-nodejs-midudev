@@ -1,5 +1,21 @@
 {
-	"devDependencies": {
-		"@types/node": "^25.0.3"
-	}
+  "name": "01-curso-nodejs-midudev",
+  "version": "1.0.0",
+  "description": "Contiene Proyectos del Curso de Node.js de midudev",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "curso",
+    "midudev",
+    "proyectos"
+  ],
+  "author": "AntonyDev",
+  "license": "ISC",
+  "packageManager": "pnpm@10.26.1",
+  "devDependencies": {
+    "@types/node": "^25.0.3"
+  }
 }

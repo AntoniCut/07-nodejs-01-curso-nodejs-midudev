@@ -1,0 +1,26 @@
+{
+  "name": "02-desarrollando-api-con-express",
+  "version": "1.0.0",
+  "description": "Clase 2 - Desarrollando una API con Express.js - curso de Node.js de midudev",
+  "main": "01-https.js",
+  "scripts": {
+    "dev": "nodemon 01-http.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "api",
+    "midudev"
+  ],
+  "author": "AntonyDev",
+  "license": "ISC",
+  "packageManager": "pnpm@10.26.1",
+  "devDependencies": {
+    "nodemon": "^3.1.11",
+    "standard": "^17.1.2"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  }
+}
