@@ -1,0 +1,27 @@
+{
+  "name": "01-introduccion-primeros-pasos",
+  "version": "1.0.0",
+  "description": "Clase 1 del Curso de nodeJS de midudev",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "midudev",
+    "curso",
+    "introduccion"
+  ],
+  "author": "AntonyDev",
+  "license": "ISC",
+  "packageManager": "pnpm@10.26.1",
+  "dependencies": {
+    "picocolors": "1.1.1"
+  },
+  "devDependencies": {
+    "standard": "^17.1.2"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  }
+}
