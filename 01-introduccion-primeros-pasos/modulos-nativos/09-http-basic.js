@@ -16,13 +16,15 @@ console.log('------------------------------\n\n');
 
 
 /**
- * ----------------
- * - `Módulo HTTP`
- * ----------------
+ * --------------------------
+ * ----- `Módulo HTTP`  -----
+ * --------------------------
+ * 
  * - El módulo HTTP nos permite crear servidores web y manejar solicitudes y respuestas HTTP.
  * - Es fundamental para construir aplicaciones web y APIs en Node.js.
  * - Proporciona funcionalidades para manejar métodos HTTP, rutas, encabezados y cuerpos de solicitudes y respuestas.
  * - Permite crear servidores web que pueden escuchar en puertos específicos y responder a las solicitudes entrantes.
+ * 
  */
 
 const http = require('node:http');

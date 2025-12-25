@@ -16,11 +16,15 @@ console.log('------------------------\n\n');
 
 
 /**
- * - Módulo nativo `Path` de Node.js
- * - Proporciona utilidades para trabajar con rutas y directorios de archivos
- * - Documentación: https://nodejs.org/api/path.html
+ * --------------------------------
+ * -----  Módulo nativo Path  -----
+ * --------------------------------
+ * 
+ * El módulo `path` proporciona utilidades para trabajar con rutas de archivos y directorios.
+ * Permite manipular y resolver rutas de manera independiente del sistema operativo.
+ * 
+ * Documentación oficial: https://nodejs.org/api/path.html
  */
-
 const path = require('node:path');
 
 

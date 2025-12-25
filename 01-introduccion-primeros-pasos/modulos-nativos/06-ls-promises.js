@@ -27,12 +27,7 @@ const fs = require('node:fs/promises');
 console.log('Files in current directory:');
 
 
-/**
- * - `fs.readdir(path)`: Lee el contenido de un directorio y devuelve una promesa
- * - `path`: Ruta del directorio a leer (en este caso, el directorio actual '.')
- * 
- */
-
+/** -----  Leer el contenido del directorio actual (.)  -----  */
 fs.readdir('.')
     
     .then(files => {

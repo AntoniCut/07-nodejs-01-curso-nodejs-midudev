@@ -23,13 +23,8 @@ console.log('----------------------------\n\n');
 
 const fs = require('node:fs');
 
-/**
- * Leer el contenido del directorio actual (.)
- * - `fs.readdir(path, callback)`: Lee el contenido de un directorio de forma asíncrona
- * - `path`: Ruta del directorio a leer (en este caso, el directorio actual '.')
- * 
- */
 
+/** -----  Leer el contenido del directorio actual (.)  -----  */
 fs.readdir('.', (err, files) => {
 
     //  -----  Manejo de errores  -----

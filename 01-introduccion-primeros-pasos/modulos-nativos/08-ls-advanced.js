@@ -17,6 +17,7 @@ console.log('-------------------------------\n\n');
 
 /**
  * - Módulo externo `picocolors`
+ * - dependencia instalada con pnpm
  * - Proporciona colores para la consola
  * - Documentación: https://www.npmjs.com/package/picocolors
  */

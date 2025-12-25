@@ -22,14 +22,7 @@ console.log('--------------------------------------------\n\n');
 */
 
 
-/**
- * - `Módulo FS Promises`
- * - Proporciona una API basada en promesas para el sistema de archivos
- * - https://nodejs.org/api/fs/promises.html
- * @type {import('node:fs/promises')}
- * 
- */
-
+/** ----- importa las funciones necesarias del módulo fs/promises  ----- */
 const { readFile } = require('node:fs/promises');
 
 
@@ -40,11 +33,7 @@ const { readFile } = require('node:fs/promises');
     console.log('\n\nLeyendo el primer archivo...\n\n');
     
 
-    /** - `readFile(ruta, encoding)`:
-     *   - Lee el contenido de un archivo de forma asíncrona
-     *   - https://nodejs.org/api/fs.html#fsreadfilepath-options-callback
-     */
-    
+    /** ----- Lee el contenido de un archivo de forma asíncrona  -----  */
     const text = await readFile('../archivos/archivo1.txt', 'utf-8');
     
 
@@ -59,11 +48,7 @@ const { readFile } = require('node:fs/promises');
     //  ----- 2º Archivo -----
     console.log('\n\nLeyendo el segundo archivo...\n\n');
 
-    /** - `readFile(ruta, encoding)`:
-     *   - Lee el contenido de un archivo de forma asíncrona
-     *   - https://nodejs.org/api/fs.html#fsreadfilepath-options-callback
-     */
-
+    /** ----- Lee el contenido de un archivo de forma asíncrona  -----  */
     const secondText = await readFile('../archivos/archivo2.txt', 'utf-8');
     
     //  -----  Mostrar contenido del archivo 2 -----

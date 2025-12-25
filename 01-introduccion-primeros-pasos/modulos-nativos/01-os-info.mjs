@@ -9,15 +9,6 @@
 */
 
 
-/**
- * - `Módulo OS`
- * - Proporciona información sobre el sistema operativo
- * - https://nodejs.org/api/os.html
- * 
- * @type {import('node:os')}
- * 
- */
-
 import { platform, release, arch, cpus, freemem, totalmem, uptime } from 'node:os'
 
 

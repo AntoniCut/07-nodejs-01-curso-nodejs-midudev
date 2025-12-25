@@ -20,12 +20,9 @@ console.log('------------------------------------------\n\n');
 
 
 /**
- * - `util.promisify()`:
- *   - Convierte funciones basadas en callbacks a funciones que devuelven promesas
- *   - https://nodejs.org/api/util.html#utilpromisifyoriginal
- * 
+ * - Función que lee un archivo de forma asíncrona y devuelve una promesa con el contenido.
+ * @type {(path: string | Buffer | URL, options?: { encoding?: null | string; flag?: string; } | string) => Promise<Buffer | string>}
  */
-
 const readFilePromise = promisify(fs.readFile);
 
 
@@ -33,11 +30,7 @@ const readFilePromise = promisify(fs.readFile);
 console.log('\nLeyendo el primer archivo...\n');
 
 
-/**  - `fs.readFile(ruta, encoding)`:
- *   - Lee el contenido de un archivo de forma asíncrona
- *   - https://nodejs.org/api/fs.html#fsreadfilepath-options-callback
- */
-
+/** ----- Lee el contenido de un archivo de forma asíncrona  -----  */
 readFilePromise('../archivos/archivo1.txt', 'utf-8')
     .then(text => {
         console.log('\nprimer texto:\n', text);
@@ -52,12 +45,7 @@ console.log('\n\n--> Hacer cosas mientras lee el archivo...\n\n');
 console.log('\nLeyendo el segundo archivo...\n');
 
 
-/**
- * - `fs.readFile(ruta, encoding)`:
- *  - Lee el contenido de un archivo de forma asíncrona
- *  - https://nodejs.org/api/fs.html#fsreadfilepath-options-callback
- */
-
+/** ----- Lee el contenido de un archivo de forma asíncrona  -----  */
 readFilePromise('../archivos/archivo2.txt', 'utf-8')
     .then(text => {
         console.log('\nsegundo texto:\n', text);

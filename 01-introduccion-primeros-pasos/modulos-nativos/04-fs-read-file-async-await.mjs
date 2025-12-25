@@ -27,11 +27,8 @@ console.log('---------------------------------------------\n\n');
 //  -----  Leer archivo 1 -----
 console.log('\n\nLeyendo el primer archivo...\n\n');
 
-/**
- * - `readFile(ruta, encoding)`:
- *  - Lee el contenido de un archivo de forma asíncrona
- */
 
+/** ----- Lee el contenido de un archivo de forma asíncrona  -----  */
 const primerText = await readFile('../archivos/archivo1.txt', 'utf-8');
 
 
@@ -46,11 +43,8 @@ console.log('\n\n--> Hacer cosas mientras lee el archivo...\n\n');
 //  -----  Leer archivo 2 -----
 console.log('\n\nLeyendo el segundo archivo...\n\n');
 
-/**
- * - `readFile(ruta, encoding)`:
- *  - Lee el contenido de un archivo de forma asíncrona
- */
 
+/** ----- Lee el contenido de un archivo de forma asíncrona  -----  */
 const secondText = await readFile('../archivos/archivo2.txt', 'utf-8');
 
 //  -----  Mostrar el contenido del archivo 2  -----

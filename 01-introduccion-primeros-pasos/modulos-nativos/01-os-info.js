@@ -15,15 +15,8 @@ console.log('-----  01-os-info.js  -----');
 console.log('---------------------------\n\n');
 
 
-/**
- * - `Módulo OS`
- * - Proporciona información sobre el sistema operativo
- * - https://nodejs.org/api/os.html
- * 
- * @type {import('node:os')}
- * 
- */
 
+/** -----  `modulo os`  ----- */
 const os = require('node:os');
 
 

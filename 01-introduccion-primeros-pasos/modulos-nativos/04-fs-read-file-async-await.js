@@ -28,12 +28,7 @@ console.log('--------------------------------------------\n\n');
 // const { promisify } = require('node:util')
 // const readFilePromise = promisify(fs.readFile)
 
-/**
- * Node.js desde la versión 10 incluye
- * una API basada en promesas para el sistema de archivos
- * https://nodejs.org/api/fs.html#fsreadfilepath-options-callback
- */
-
+/** ----- importa las funciones necesarias del módulo fs/promises  ----- */
 const { readFile } = require('node:fs/promises');
 
 
@@ -43,6 +38,7 @@ const { readFile } = require('node:fs/promises');
  * ----------------------
  * 
  * - Función asíncrona para leer archivos
+ * - utilizando async-await
  * 
  */
 
@@ -53,11 +49,7 @@ async function init () {
     console.log('\n\nLeyendo el primer archivo...\n\n');
     
 
-    /** - `readFile(ruta, encoding)`:
-     *   - Lee el contenido de un archivo de forma asíncrona
-     *   - https://nodejs.org/api/fs.html#fsreadfilepath-options-callback
-     */
-    
+    /** ----- Lee el contenido de un archivo de forma asíncrona  -----  */
     const text = await readFile('../archivos/archivo1.txt', 'utf-8');
     
 
@@ -72,13 +64,11 @@ async function init () {
     //  ----- 2º Archivo -----
     console.log('\n\nLeyendo el segundo archivo...\n\n');
 
-    /** - `readFile(ruta, encoding)`:
-     *   - Lee el contenido de un archivo de forma asíncrona
-     *   - https://nodejs.org/api/fs.html#fsreadfilepath-options-callback
-     */
-
+    
+    /** ----- Lee el contenido de un archivo de forma asíncrona  -----  */
     const secondText = await readFile('../archivos/archivo2.txt', 'utf-8');
     
+
     //  -----  Mostrar contenido del archivo 2 -----
     console.log('\n\nsegundo texto:\n', secondText);
     

@@ -15,23 +15,12 @@ console.log('-----  02-fs-stat.js  -----');
 console.log('---------------------------\n\n');
 
 
-/**
- * - `Módulo FS`
- * - Proporciona información sobre el sistema de archivos
- * - https://nodejs.org/api/fs.html
- * @type {import('node:fs')}
- * 
- */
 
+/** ----- `modulo fs`  ----- */
 const fs = require('node:fs');
 
 
-/**
- * - `fs.statSync(ruta)`:
- *   - Devuelve información sobre el archivo o directorio en la ruta especificada
- *   - https://nodejs.org/api/fs.html#fsstatpath-options
- *  
- */
+/**  ----- Devuelve información sobre el archivo o directorio en la ruta especificada  -----  */
 const stats = fs.statSync('../archivos/archivo1.txt');
 
 

@@ -15,14 +15,7 @@ console.log('-----  04-fs-read-file-async-callbacks.js  -----');
 console.log('------------------------------------------------\n\n');
 
 
-/**
- * - `Módulo FS`
- * - Proporciona información sobre el sistema de archivos
- * - https://nodejs.org/api/fs.html
- * @type {import('node:fs')}
- * 
- */
-
+/** -----  `Módulo FS`  ----- */
 const fs = require('node:fs');
 
 
@@ -36,13 +29,7 @@ const fs = require('node:fs');
 //  ----- 1º Archivo -----
 console.log('\n\n-----  Leyendo el primer archivo...');
 
-/**
- * - `fs.readFileSync(ruta, encoding)`:
- *   - Lee el contenido de un archivo de forma asíncrona
- *  - https://nodejs.org/api/fs.html#fsreadfilepath-options-callback
- *  
- */
-
+/**  -----  Lee el contenido de un archivo de forma asíncrona  -----  */
 fs.readFile('../archivos/archivo1.txt', 'utf-8', (err, data) => {
     
 
@@ -66,12 +53,7 @@ console.log('\n\n--> Hacer cosas mientras lee el archivo...\n\n');
 console.log('\n\n-----  Leyendo el segundo archivo...');
 
 
-/**
- * - `fs.readFile(ruta, encoding, callback)`:
- *   - Lee el contenido de un archivo de forma asíncrona
- *   - https://nodejs.org/api/fs.html#fsreadfilepath-options-callback
- *  
- */
+/**  -----  Lee el contenido de un archivo de forma asíncrona  -----  */
 fs.readFile('../archivos/archivo2.txt', 'utf-8', (err, data) => {
     
     //  -----  Manejo de errores -----
